@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * This is the beginning of the main method
+ * main - entry point
+ *
+ * Return: Always 0 (Sucess)
  */
 int main(void)
 {
-	return (0);
+	return (0)
 }

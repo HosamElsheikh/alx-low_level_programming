@@ -10,9 +10,10 @@ int _abs(int n)
 {
 	int absval;
 
+	absval = n;
 	if (n < 0)
 	{
 		absval = n - (n * 2);
-		return (absval);
 	}
+	return (absval);
 }

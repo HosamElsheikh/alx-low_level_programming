@@ -5,6 +5,8 @@ int _putchar(char c);
 /* Additional function prototypes, if any */
 void jack_bauer(void);
 
+void times_table(void);
+
 void print_alphabet(void);
 
 int _abs(int);

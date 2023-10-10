@@ -3,6 +3,7 @@
 
 int _putchar(char c);
 /* Additional function prototypes, if any */
+void jack_bauer(void);
 
 void print_alphabet(void);
 

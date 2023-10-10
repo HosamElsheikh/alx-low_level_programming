@@ -8,8 +8,11 @@
  */
 int _abs(int n)
 {
+	int absval;
+
 	if (n < 0)
 	{
-		return (n - (n * 2));
+		absval = n - (n * 2);
+		return (absval);
 	}
 }

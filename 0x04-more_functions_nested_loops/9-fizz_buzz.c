@@ -16,6 +16,10 @@ int main(void)
 			printf("FizzBuzz");
 			printf(" ");
 		}
+		else if (i == 100)
+		{
+			printf("Buzz");
+		}
 		else if (i % 3 == 0)
 		{
 			printf("Fizz");

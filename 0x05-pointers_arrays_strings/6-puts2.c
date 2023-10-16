@@ -2,26 +2,19 @@
 
 /**
  * puts2 - prints every other character of a string
- * @s: The input string
+ * @str: The input string
  *
  * Return: void
  */
-void puts2(char *s)
+void puts2(char *str)
 {
-	int length = 0;
-	int start = 0;
-	int end;
+	int i = 0;
 
-	while (s[length] != '\0')
+	while (str[i] != '\0')
 	{
-		length++;
+		_putchar(str[i]);
+		i += 2;
 	}
-	end = length - 1;
 
-	while (start < end)
-	{
-		_putchar(s[start]);
-		start += 2;
-	}
 	_putchar('\n');
 }

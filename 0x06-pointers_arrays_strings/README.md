@@ -1,0 +1,1 @@
+Second tasks for pointers

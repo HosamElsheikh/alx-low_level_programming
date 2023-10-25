@@ -1,5 +1,6 @@
 /**
- * check_prime - Helper function to check if n is divisible by any number from start.
+ * check_prime - Helper function to
+ * check if n is divisible by any number from start.
  * @n: The number to check for primality.
  * @k: The starting number to check divisibility.
  *

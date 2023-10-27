@@ -16,13 +16,12 @@ int main(int argc, char *argv[])
 	result = 1;
 	if (argc < 3)
 		return (1);
-	
 	for (i = 1; i < argc; i++)
 	{
 		result *= atoi(argv[i]);
 	}
-	
+
 	printf("%d\n", result);
-	
+
 	return (0);
 }

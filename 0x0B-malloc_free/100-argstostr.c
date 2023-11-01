@@ -1,7 +1,8 @@
 #include <stdlib.h>
 
 /**
- * argstostr - Concatenates all the arguments of the program with newline characters
+ * argstostr - Concatenates all the arguments of
+ * the program with newline characters
  * @ac: Argument count
  * @av: Array of argument strings
  *
@@ -14,12 +15,9 @@ char *argstostr(int ac, char **av)
 	int index;
 	char *arg;
 	char *result;
-	
-	if (ac == 0 || av == NULL)
-	{
-		return (NULL);
-	}
 
+	if (ac == 0 || av == NULL)
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		arg = av[i];
@@ -29,18 +27,11 @@ char *argstostr(int ac, char **av)
 			arg++;
 		}
 	}
-
 	total_length += ac;
-
-	result = (char *)malloc(total_length + ac + 1);
-
+	result = (char *)malloc(total_length + 1);
 	if (result == NULL)
-	{
 		return (NULL);
-	}
-
 	index = 0;
-
 	for (i = 0; i < ac; i++)
 	{
 		arg = av[i];
@@ -51,8 +42,6 @@ char *argstostr(int ac, char **av)
 		}
 		result[index++] = '\n';
 	}
-
 	result[total_length] = '\0';
-
 	return (result);
 }

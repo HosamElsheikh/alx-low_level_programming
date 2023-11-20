@@ -4,8 +4,10 @@
 
 
 /**
- * print_number - Prints an integer using _putchar.
+ * printNumber - Prints an integer using _putchar.
  * @n: The integer to print.
+ *
+ * Return: void
  */
 void printNumber(int n)
 {

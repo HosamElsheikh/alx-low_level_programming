@@ -12,10 +12,9 @@ int pop_listint(listint_t **head)
 	listint_t *temp;
 	int data = 0;
 
-	if (*head == NULL || head == NULL)
+	if (*head == NULL)
 	{
 		free(head);
-		free(*head);
 		return (0);
 	}
 

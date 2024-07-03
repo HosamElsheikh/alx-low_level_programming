@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0 (Success)
+ * Return: Always zero
  */
 int main(void)
 {
-	char i, j;
+	char i;
 
 	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
 	}
-	for (j = 97; j < 103; j++)
+	for (i = 97; i < 103; i++)
 	{
-		putchar(j);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

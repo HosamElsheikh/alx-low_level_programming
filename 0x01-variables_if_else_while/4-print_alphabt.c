@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0 (Success)
+ * Return: Always zero
  */
 int main(void)
 {
-	char c;
+	int i;
 
-	for (c = 97; c < 123; c++)
+	for (i = 97; i < 123; i++)
 	{
-		if (c != 101 && c != 113)
+		if (i != 113 && i != 101)
 		{
-			putchar(c);
+			putchar(i);
 		}
 	}
 	putchar('\n');

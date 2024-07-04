@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * jack_bauer - writes every minute
- *
- * Return: void
+ * jack_bauer - Print every minute
  */
 void jack_bauer(void)
 {
-	int a, b;
+	int hh;
+	int mm;
 
-	for (a = 0; a < 24; a++)
+	for (hh = 0; hh < 24; hh++)
 	{
-		for (b = 0; b < 60; b++)
+		for (mm = 0; mm < 60; mm++)
 		{
-			_putchar((a / 10) + '0');
-			_putchar((a % 10) + '0');
+			_putchar((hh / 10) + '0');
+			_putchar((hh % 10) + '0');
 			_putchar(':');
-			_putchar((b / 10) + '0');
-			_putchar((b % 10) + '0');
+			_putchar((mm / 10) + '0');
+			_putchar((mm % 10) + '0');
 			_putchar('\n');
+
 		}
 	}
 }

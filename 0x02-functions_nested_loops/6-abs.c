@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * _abs - returns the absolute value
- * @n: The number of operation
+ * _abs - Calculates the absolute value
  *
  * Return: The absolute value
+ *
+ * @n: The number
  */
 int _abs(int n)
 {
-	int absval;
-
-	absval = n;
 	if (n < 0)
 	{
-		absval = n - (n * 2);
+		n = -1 * n;
+		return (n);
 	}
-	return (absval);
+	else
+	{
+		return (n);
+	}
 }

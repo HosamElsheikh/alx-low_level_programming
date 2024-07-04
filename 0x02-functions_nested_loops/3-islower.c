@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
- * _islower - checks whether the character
- * is lower case or not
+ * _islower - checks for lowercase character
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: on success: 1
+ * 0 if failed
  *
- * @c: The character to print
+ * @c: The letter to check
  */
-
 int _islower(int c)
 {
-	if (c < 97 || c > 122)
+	if (c > 96 && c < 123)
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }

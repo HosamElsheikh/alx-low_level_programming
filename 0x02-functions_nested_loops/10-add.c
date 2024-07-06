@@ -1,14 +1,14 @@
+#include <stdio.h>
+
 /**
- * add - Adds two integers
- * @a: The first integer
- * @b: The second integer
+ * add - adds two ints
  *
- * Return: The sum of the two integers
+ * Return: The sum of the two arguments
+ *
+ * @a: First int
+ * @b: Second int
  */
 int add(int a, int b)
 {
-	int result;
-
-	result = a + b;
-	return (result);
+	return (a + b);
 }

@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * print_line - prints a line of underscores
- * @n: the number of underscores to print
+ * print_line - Print straight line
+ *
+ * @n: The number of _
  */
+
 void print_line(int n)
 {
-	if (n <= 0)
-		_putchar('\n');
-	else
-	{
-		int i;
+	int i;
 
-		for (i = 0; i < n; i++)
-		{
-			_putchar('_');
-		}
+	if (n <= 0)
+	{
 		_putchar('\n');
+		return;
+	}
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
 	}
 }

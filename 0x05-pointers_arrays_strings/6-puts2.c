@@ -16,6 +16,7 @@ void puts2(char *str)
 			continue;
 		}
 		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\0');
 }

@@ -7,16 +7,18 @@
  *
  * Return: The pointer to the destination buffer
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	char *dest_start = dest;
+	int i;
+	int size;
 
-	while (*src)
+	while (src[size] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		size++;
 	}
-	*dest = '\0';
-	return (dest_start);
+	for (i = 0; i <= size; i++)
+	{
+		dest[i] = src[i];
+	}
 }

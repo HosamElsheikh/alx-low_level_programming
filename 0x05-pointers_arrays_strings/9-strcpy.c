@@ -17,10 +17,10 @@ char *_strcpy(char *dest, char *src)
 	{
 		size++;
 	}
-	for (i = 0; i < size; i++)
+	for (i = 0; i <= size; i++)
 	{
 		dest[i] = src[i];
 	}
-	dest[size + 1] = '\0';
+
 	return (dest);
 }

@@ -1,27 +1,26 @@
+#include "main.h"
+
 /**
- * _strncat - adds s2 to s1 by n
- * @dest: The first string
+ * _strncat - concats two strings
+ * @dest: Main string
  * @src: The string to concat
  * @n: The number of bytes
- *
- * Return: Pointer
+ * Return: New string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int length;
+	int size = 0;
 	int i;
 
-	length = 0;
-	while (dest[length] != '\0')
-		length++;
-
+	while (dest[size] != '\0')
+	{
+		size++;
+	}
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest[length] = src[i];
-		length++;
+		dest[size] = src[i];
+		size++;
 	}
-	dest[length] = '\0';
-
-
+	dest[size] = '\0';
 	return (dest);
 }

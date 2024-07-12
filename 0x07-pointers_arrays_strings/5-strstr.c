@@ -8,28 +8,23 @@
  * substring, or NULL if the substring is not found.
  */
 char *_strstr(char *haystack, char *needle)
-{	char *n = needle;
+{
 	char *h;
+	char *n;
 
-	while (haystack != '\0')
+	while (*haystack)
 	{
-		if (*haystack == *needle)
+		h = haystack;
+		n = needle;
+		while (*haystack && *n && *haystack == *n)
 		{
-			h = haystack;
-			while (n != '\0')
-			{
-				if (*n == *h)
-				{
-					n++;
-					h++;
-				}
-				else
-				{
-					break;
-				}
-				return (haystack);
-			}
+			haystack++;
+			n++;
 		}
+		if (!*n)
+			return (h);
+
+		haystack = h + 1;
 	}
 	return (NULL);
 }

@@ -10,7 +10,7 @@ int sqrt_guess(int n, int g)
 {
 	if (g * g == n)
 	{
-		return (n);
+		return (g);
 	}
 	else if (g * g > n)
 	{

@@ -1,18 +1,19 @@
+#include "main.h"
+
 /**
- * factorial - Calculate the factorial of a number
- * @n: The number for which to calculate the factorial
- *
- * Return: The factorial of n, or -1 if n is negative (error).
+ * factorial - makes factorial
+ * @n: The number to factorial
+ * Return: The result of the factorial
  */
 int factorial(int n)
 {
-	int fac;
-
 	if (n < 0)
+	{
 		return (-1);
+	}
 	else if (n == 0)
+	{
 		return (1);
-
-	fac = n * factorial(n - 1);
-	return (fac);
+	}
+	return (n * factorial(n - 1));
 }

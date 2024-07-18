@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strdup - Pointer to a copy of a string
@@ -19,7 +20,8 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	ret = malloc(size * sizeof(char));
+	printf("%d", size);
+	ret = malloc(size * sizeof(char) + 1);
 
 	if (ret == NULL)
 	{

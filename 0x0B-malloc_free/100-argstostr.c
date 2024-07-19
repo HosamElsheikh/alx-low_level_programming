@@ -1,47 +1,51 @@
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * argstostr - Concatenates all the arguments of
- * the program with newline characters
- * @ac: Argument count
- * @av: Array of argument strings
- *
- * Return: A pointer to the concatenated string, or NULL on failure
+ * argstostr - concatenates all the arguments of your program
+ * @ac: number of arguments
+ * @av: The array of arguments
+ * Return: Pointer to an array of strings
  */
 char *argstostr(int ac, char **av)
 {
-	int total_length = 0;
 	int i;
-	int index;
-	char *arg;
-	char *result;
+	char *ret;
+	int char_length;
+	char *tmp;
+	int space = 0;
 
 	if (ac == 0 || av == NULL)
+	{
 		return (NULL);
+	}
+
 	for (i = 0; i < ac; i++)
 	{
-		arg = av[i];
-		while (*arg != '\0')
+		tmp = av[i];
+		while (*tmp != '\0')
 		{
-			total_length++;
-			arg++;
+			tmp++;
+			char_length++;
 		}
 	}
-	total_length += ac;
-	result = (char *)malloc(total_length + 1);
-	if (result == NULL)
+	char_length += ac;
+	ret = malloc(sizeof(char) * char_length + 1);
+	if (ret == NULL)
+	{
 		return (NULL);
-	index = 0;
+	}
 	for (i = 0; i < ac; i++)
 	{
-		arg = av[i];
-		while (*arg != '\0')
+		tmp = av[i];
+		while (*tmp != '\0')
 		{
-			result[index++] = *arg;
-			arg++;
+			ret[space] = *tmp;
+			space++;
+			tmp++;
 		}
-		result[index++] = '\n';
+		ret[space] = '\n';
+		space++;
 	}
-	result[total_length] = '\0';
-	return (result);
+	ret[char_length] = '\0';
+	return (ret);
 }

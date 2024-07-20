@@ -9,8 +9,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int size1 = 0, size2 = 0;
-	int i, j = 0;
+	unsigned int size1 = 0, size2 = 0, i;
 	char *ret;
 
 	if (s1 == NULL)
@@ -40,13 +39,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (i = 0; i < size1; i++)
 	{
-		ret[j] = s1[i];
-		j++;
+		ret[i] = s1[i];
 	}
 	for (i = 0; i < n; i++)
 	{
-		ret[j] = s2[i];
+		ret[size1 + i] = s2[i];
 	}
-	ret[j] = '\0';
+	ret[size1 + n] = '\0';
 	return (ret);
 }

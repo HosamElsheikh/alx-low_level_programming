@@ -1,9 +1,8 @@
-#include <stdlib.h>
 #include "dog.h"
 
 /**
- * free_dog - Frees a dog structure
- * @d: Pointer to the dog structure to free
+ * free_dog - frees the dog
+ * @d: The woof woof
  */
 void free_dog(dog_t *d)
 {

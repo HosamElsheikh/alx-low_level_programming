@@ -1,13 +1,11 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
-/* Function pointer type for functions that print a name */
-typedef void (*print_name_t)(char *);
+#include <stdio.h>
+#include <stdlib.h>
 
-/* Function prototypes */
-void print_name(char *name, print_name_t f);
-void array_iterator(int *array, size_t size, void (*action)(int));
-int int_index(int *array, int size, int (*cmp)(int));
+int _putchar(char c);
+void print_name(char *name, void (*f)(char *));
+void f(char *);
 
-
-#endif /* FUNCTION_POINTERS_H */
+#endif

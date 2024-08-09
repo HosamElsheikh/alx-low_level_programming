@@ -1,22 +1,18 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * listint_len - returns the number of elements in the list
- *
- * @h: pointer to the list
- *
- * Return: size of the element
+ * @h: The list
+ * Return: The number of elements
  */
 size_t listint_len(const listint_t *h)
 {
-	int ctr = 0;
+	size_t count = 0;
 
-	while (h != NULL)
+	while (h)
 	{
-		ctr++;
+		count++;
 		h = h->next;
 	}
-	return (ctr);
+	return (count);
 }
